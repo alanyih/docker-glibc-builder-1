@@ -5,7 +5,6 @@ BASE_ARCH ?= amd64
 
 build: tmp-$(TARGET)/Dockerfile
 	docker build --no-cache -t meyskens/glibc-builder:$(TARGET)-latest tmp-$(TARGET)
-	docker run --rm meyskens/multiarch-nodejs:$(TARGET)-latest uname -a
 
 
 tmp-$(TARGET)/Dockerfile: Dockerfile $(shell find overlay-common)
