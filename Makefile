@@ -4,7 +4,7 @@ BASE_ARCH ?= amd64
 
 
 build: tmp-$(TARGET)/Dockerfile
-	docker build --build-arg ARCH=$(TARGET) --no-cache -t meyskens/glibc-builder:$(TARGET)-latest tmp-$(TARGET)
+	docker build --no-cache -t meyskens/glibc-builder:$(TARGET)-latest tmp-$(TARGET)
 	docker run --rm meyskens/multiarch-nodejs:$(TARGET)-latest uname -a
 
 
