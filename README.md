@@ -1,4 +1,4 @@
-# docker-glibc-builder
+# docker-glibc-builder [![Build Status](https://travis-ci.org/meyskens/docker-glibc-builder.svg?branch=master)](https://travis-ci.org/meyskens/docker-glibc-builder)
 
 A glibc binary package builder in Docker based on `andyshinn/glibc-builder`. Produces a glibc binary package that can be imported into a rootfs to run applications dynamically linked against glibc.
 
