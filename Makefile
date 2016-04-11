@@ -13,7 +13,6 @@ tmp-$(TARGET)/Dockerfile: Dockerfile $(shell find overlay-common)
 	mkdir tmp-$(TARGET)
 	cp Dockerfile $@
 	cp -rf overlay-common tmp-$(TARGET)/
-	cp -rf overlay-$(TARGET) tmp-$(TARGET)/
 	for arch in $(ARCHS); do                     \
 	  if [ "$$arch" != "$(TARGET)" ]; then       \
 	    sed -i "/arch=$$arch/d" $@;              \
