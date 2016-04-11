@@ -13,7 +13,7 @@ docker run --rm -e STDOUT=1 meyskens/glibc-builder:amd64-latest 2.23 /usr/glibc-
 You can also keep the container around and copy out the resulting file:
 
 ```
-docker run --name glibc-binary andyshinn/glibc-builder 2.23 /usr/glibc-compat
+docker run --name glibc-binary meyskens/glibc-builder:amd64-latest 2.23 /usr/glibc-compat
 docker cp glibc-binary:/glibc-bin-2.23.tar.gz ./
 docker rm glibc-binary
 ```
