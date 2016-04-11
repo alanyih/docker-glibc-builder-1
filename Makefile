@@ -8,7 +8,7 @@ build: tmp-$(TARGET)/Dockerfile
 	docker run --rm meyskens/multiarch-nodejs:$(TARGET)-latest uname -a
 
 
-tmp-$(TARGET)/Dockerfile: Dockerfile $(shell find overlay-common overlay-$(TARGET))
+tmp-$(TARGET)/Dockerfile: Dockerfile $(shell find overlay-common)
 	rm -rf tmp-$(TARGET)
 	mkdir tmp-$(TARGET)
 	cp Dockerfile $@
