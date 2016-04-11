@@ -1,4 +1,4 @@
-FROM multiarch/ubuntu-debootstrap:amd64-trusty
+#FROM multiarch/ubuntu-debootstrap:amd64-trusty # arch=amd64
 #FROM multiarch/ubuntu-debootstrap:armhf-trusty # arch=armhf
 #FROM multiarch/ubuntu-debootstrap:i368-trusty # arch=i368
 ENV PREFIX_DIR /usr/glibc-compat
