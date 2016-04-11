@@ -1,6 +1,6 @@
 FROM multiarch/ubuntu-debootstrap:amd64-trusty
-#FROM multiarch/ubuntu-core:armhf-trusty # arch=armhf
-#FROM multiarch/ubuntu-core:i368-trusty # arch=i368
+#FROM multiarch/ubuntu-debootstrap:armhf-trusty # arch=armhf
+#FROM multiarch/ubuntu-debootstrap:i368-trusty # arch=i368
 ENV PREFIX_DIR /usr/glibc-compat
 ENV GLIBC_VERSION 2.23
 RUN apt-get -q update \
